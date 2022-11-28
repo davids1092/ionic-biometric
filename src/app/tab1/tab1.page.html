@@ -13,5 +13,11 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <!-- <app-explore-container name="Tab 1 page"></app-explore-container> -->
+
+  <ion-button (click)="takePicture()">Tomar primera foto</ion-button>
+  <ion-img class="fotoCedula" [src]="blob"></ion-img>
+  <ion-button (click)="takePicture1()">Tomar segunda foto</ion-button>
+  <ion-img class="fotoCedula" [src]="blob2" *ngIf="img!= ''"></ion-img>
+  <ion-button (click)="comparar()">Comparar</ion-button>
 </ion-content>

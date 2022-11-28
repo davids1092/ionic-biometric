@@ -3,7 +3,20 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  //httpUrl : "https://dev.bankvision.com/v1/"
+  //httpUrl: "https://cloud.bankvision.com/"
+  HttpUrl: [
+    /* 'https://pruebas.bankvision.com/web-login-service/web/', */
+    /* 'http://localhost:8080/', */
+      'https://pruebas.bankvision.com/'  
+    //  'https://certificacion.bankvision.com/' 
+  ],
+ 
+  // HttpUrlToken: 'https://certificacion.bankvision.com/', 
+   HttpUrlToken: 'https://pruebas.bankvision.com/',
+  // images:'../assets',
+  
 };
 
 /*

@@ -13,5 +13,8 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <!-- <app-explore-container name="Tab 2 page"></app-explore-container> -->
+  <ion-button (click)="takePicture()">Tomar foto</ion-button>
+  <ion-img class="fotoCedula" [src]="blob"></ion-img>
+  <ion-button (click)="readInfo()">Leer información</ion-button>
 </ion-content>
